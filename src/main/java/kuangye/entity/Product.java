@@ -68,6 +68,10 @@ public class Product {
         this.quantity = quantity;
     }
 
+    public synchronized void addQuantity(long quantity) {
+        this.quantity += quantity;
+    }
+
     public String getDescription() {
         return description;
     }

@@ -1,6 +1,5 @@
 package kuangye.servlet;
 
-import kuangye.constant.Constant;
 import kuangye.entity.Product;
 import kuangye.xml.XmlDao;
 import org.apache.log4j.Logger;
@@ -58,7 +57,7 @@ public class CartServlet extends BaseServlet {
             p.setQuantity(1);
             cart.add(p);
         } else {
-            newProduct.get().setQuantity(newProduct.get().getQuantity() + 1);
+            newProduct.get().addQuantity(1);
         }
 
         // check cart product quantity
