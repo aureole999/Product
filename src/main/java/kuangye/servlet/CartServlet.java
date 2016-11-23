@@ -35,7 +35,7 @@ public class CartServlet extends BaseServlet {
         if (cart == null) {
             cart = new ArrayList<>();
         } else {
-            // clone cart to make sure
+            // clone cart to make sure thread safe
             cart = new ArrayList<>(cart);
         }
 
