@@ -7,7 +7,7 @@
     <groupId>kuangye</groupId>
     <artifactId>product</artifactId>
     <version>1.0</version>
-
+    <packaging>war</packaging>
 
     <build>
         <plugins>
